@@ -18,7 +18,7 @@ The goal is not only to describe controls, but to show how trust boundaries, acc
 
 ## Cloud Architectures
 
-- [Azure Secure Landing Zone](cloud/azure-secure-landing-zone.md)
+- [Cloud Secure Landing Zone](cloud/cloud-secure-landing-zone.md)
 - [Zero Trust Architecture](cloud/zero-trust-architecture.md)
 - [Multi-Tenant SaaS Security](cloud/multi-tenant-saas-security.md)
 
