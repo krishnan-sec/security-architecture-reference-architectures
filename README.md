@@ -8,62 +8,63 @@ End-to-end security reference architectures for cloud and SaaS platforms, connec
 
 This repository contains architecture-level security designs for modern enterprise and product environments.
 
-It demonstrates how a senior or principal-level security engineer approaches secure system design by combining:
+It is intended to show how security architecture can be expressed as clear, reusable reference models across cloud, application, data, and detection domains.
 
-- security architecture principles
-- cross-cloud control strategies
-- threat-informed design decisions
-- identity and trust boundary analysis
-- telemetry and detection requirements
-- reusable patterns for scalable implementation
-
-Rather than focusing only on individual technologies, this repository shows how security capabilities fit together across platforms, workloads, and operating models.
+The goal is not only to describe controls, but to show how trust boundaries, access models, operational visibility, and protection requirements fit together across real-world platforms.
 
 ---
 
-## What This Repository Demonstrates
+## Repository Structure
 
-This repository is designed to showcase capability in:
+## Cloud Architectures
 
-- designing secure cloud foundations for enterprise environments
-- building reference architectures for SaaS and platform security
-- translating security principles into practical control domains
-- linking architecture decisions to threats, telemetry, and operational visibility
-- creating reusable, repeatable security design assets
-- working across both strategic architecture and practical engineering concerns
+- [Azure Secure Landing Zone](cloud/azure-secure-landing-zone.md)
+- [Zero Trust Architecture](cloud/zero-trust-architecture.md)
+- [Multi-Tenant SaaS Security](cloud/multi-tenant-saas-security.md)
+
+## Application Architectures
+
+- [Secure API Platform](application/secure-api-platform.md)
+- [Event-Driven Security](application/event-driven-security.md)
+- [Microservices Security](application/microservices-security.md)
+
+## Data Architectures
+
+- [Data Protection Architecture](data/data-protection-architecture.md)
+- [PII Security Architecture](data/pii-security-architecture.md)
+
+## Detection Architectures
+
+- [SOC Detection Architecture](detection/soc-detection-architecture.md)
+- [Threat Detection Pipeline](detection/threat-detection-pipeline.md)
 
 ---
 
-## Architecture Domains
+## What These Architectures Cover
 
-### Cloud
-Reference architectures for secure cloud foundations, trust models, and tenant-aware deployments.
+These reference architectures are intended to describe:
 
-### Application
-Reference architectures for API protection, service boundaries, and application security control placement.
-
-### Data
-Reference architectures for data protection, privacy, classification, and cryptographic control design.
-
-### Detection
-Reference architectures for security telemetry, SOC integration, detection pipelines, and monitoring strategy.
+- security objectives and architectural intent
+- core control domains
+- trust boundaries and access considerations
+- operational and monitoring implications
+- design decisions and trade-offs
+- patterns that can be reused across platforms and teams
 
 ---
 
 ## Design Principles
 
-The architectures in this repository are based on the following principles:
+Common themes across the repository include:
 
-- identity-first security
-- least privilege by default
-- explicit trust boundaries
-- defense in depth
-- assume breach
-- policy-driven governance
-- secure-by-design engineering
-- telemetry as a core security control
-- cross-cloud architecture thinking
-- reusable security patterns over one-off solutions
+- identity as a primary control plane
+- least privilege and explicit authorization
+- controlled trust boundaries
+- secure service-to-service interaction
+- tenant and data isolation
+- observability as a security requirement
+- detection-informed architecture
+- repeatable and reviewable design patterns
 
 ---
 
@@ -86,5 +87,3 @@ These documents can be used as:
 - portfolio artifacts
 - discussion starters for engineering and security teams
 - reusable reference material for future design work
-
----
